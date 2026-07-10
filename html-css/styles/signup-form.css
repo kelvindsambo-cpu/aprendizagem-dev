@@ -1,0 +1,46 @@
+/* Apply box-sizing globally to prevent padding from breaking widths */
+* {
+  box-sizing: border-box;
+}
+
+.form {
+  width: 350px;
+  font-family: Arial, sans-serif; /* Cleaner, modern look */
+}
+
+.row {
+  display: flex; /*Share the line equally*/
+  gap: 6px; /*6px gap between the flex boxes*/
+  margin-bottom: 7px;
+}
+
+.name {
+  flex: 1; /*Share the line 50/50 */
+  width: 0; /* Prevents long placeholders from stretching the flex items */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(182, 182, 182);
+}
+
+.email {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(182, 182, 182);
+  margin-bottom: 7px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  color: white;
+  background-color: rgb(143, 143, 240);
+  border: none; /* Removes default ugly browser border */
+  border-radius: 5px;
+  cursor: pointer; /* Makes it feel like a clickable button */
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: rgb(120, 120, 220); /* Subtle hover effect */
+}

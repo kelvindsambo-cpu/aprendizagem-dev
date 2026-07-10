@@ -5,21 +5,31 @@
   <title>Input Practice</title>
   <style>
     body{
-      font-family: "sans=serif";
+      font-family: "sans-serif";
     }
     input{
       text-align:center;
-      display:block;
+      display:inline-block;
+      width: 250px;
     }
     span{
       color:red;
     }
+    label{
+      display: inline-block;
+      width: 150px;
+    }
   </style>
 </head>
 <body>
-  <p>Enter your name:<span>*</span></p>
-  <input type="text" placeholder="Peter Williams">
-  <p>Enter your email:<span>*</span></p>
+  <label>Enter your name:<span>*</span></label>
+  <input type="text" placeholder="Kelvin Sambo">
+  <button>Go</button>
+  <br>
+
+  <label>Enter your email:<span>*</span></label>
   <input type="email" placeholder="example@gmail.com">
+  <button>Go</button>
+
 </body>
 </html>
