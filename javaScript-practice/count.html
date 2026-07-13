@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Counter App</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    #count {
+      font-size: 50px;
+      margin: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Counter</h1>
+  <div id="count">0</div>
+  <button onclick="increase()">Click me</button>
+
+  <script>
+    let count = 0;
+
+    function increase() {
+      count ++;
+
+      document.getElementById("count").innerText = count;
+    }
+  </script>
+
+</body>
+</html>
