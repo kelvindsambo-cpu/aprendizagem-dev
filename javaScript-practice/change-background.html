@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle</title>
+</head>
+<body>
+  <div id="bulb" style="width: 100px; height: 100px; background-color: gray; border-radius: 50%;"></div>
+  <button id="toggle-btn" onclick="switchColor()">Switch</button>
+
+  <script>
+    const bulb = document.getElementById("bulb");
+    function switchColor () {
+      if (bulb.style.backgroundColor == "gray"){
+        bulb.style.backgroundColor = "yellow"
+      } else {
+        bulb.style.backgroundColor = "gray"
+      }
+    }
+  </script>
+</body>
+</html>
