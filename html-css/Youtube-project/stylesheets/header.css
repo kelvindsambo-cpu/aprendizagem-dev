@@ -1,57 +1,103 @@
-*{
-  box-sizing: border-box;
-}
-.header{
+
+/* 1. Header Container */
+.header {
   display: flex;
-  height: 90px;
   position: fixed;
   top: 10px;
   right: 10px;
   left: 10px;
+  height: 56px;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  background-color: #ffffff;
+  padding: 8px 15px;
+  z-index: 100; /* Keeps the header floating above all other content */
+  border-radius: 8px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
 }
 
-.right-section, .middle-section, .left-section{
+/* 2. Sub-Sections Layout */
+.right-section, 
+.middle-section, 
+.left-section {
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 80px;
-  gap: 10px;
+  gap: 12px;
 }
 
-.middle-section{
+/* 3. Middle Search Section */
+.middle-section {
   flex: 1;
-  gap:0px
+  max-width: 650px;
+  gap: 0px; /* Removes gap between input and the search button */
 }
+
+/* 4. Images & Icons */
+img {
+  display: block;
+}
+
 .icon {
-  height: 30px;
+  height: 24px;
+  cursor: pointer;
+  object-fit: contain;
 }
 
-#yt-logo{
-  margin-left: 5px;
+#yt-logo {
+  height: 20px;
+  margin-left: 10px;
 }
 
-#profile-pic{
-  width: 30px;
+#profile-pic {
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   object-fit: cover;
+  border: 1px solid #e5e5e5;
 }
 
-input{
-  display: flex;
+/* 5. Inputs & Buttons (The Search Bar) */
+input[type="search"] {
   flex: 1;
-  height: 30px;
-  border: 1px solid gray;
-  border-radius: 3px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  max-width: 700px;
-}
-#search-btn {
-  border: 1px solid gray;
-  margin-left: -1px;
-  margin-right: 7px;
+  height: 36px;
+  padding-left: 15px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 40px 0 0 40px;
+  outline: none;
 }
 
+input[type="search"]:focus {
+  border-color: #1c62b9; /* Classic active blue border accent */
+}
+
+#search-btn {
+  border: 1px solid #cccccc;
+  background-color: #f8f8f8;
+  height: 36px;
+  width: 60px;
+  padding: 6px;
+  margin-left: -1px;
+  border-radius: 0 40px 40px 0; /* Rounds only the outer corners of the button */
+  justify-content: center;
+  align-items: center;
+}
+
+#search-btn:hover {
+  background-color: #f0f0f0;
+}
+
+/* 6. Voice Search Icon */
+#voice-search {
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+#voice-search:hover {
+  background-color: #e5e5e5;
+}

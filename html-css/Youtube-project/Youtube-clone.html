@@ -5,29 +5,104 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Youtube Clone by Kelvin Sambo</title>
   <link rel="stylesheet" href="stylesheets/header.css">
+  <link rel="stylesheet" href="stylesheets/layout.css"> 
 </head>
 <body>
+
   <div class="header">
     <div class="left-section">
-      <img class= "icon" src="pictures/hamburger-menu.svg" alt="Hamburguer menu">
-      <img class="icon" id="yt-logo" src="pictures/youtube-logo.svg" alt = "Youtube/logo">
+      <img class="icon" src="pictures/hamburger-menu.svg" alt="Hamburguer menu">
+      <img class="icon" id="yt-logo" src="pictures/youtube-logo.svg" alt="Youtube/logo">
     </div>
 
     <div class="middle-section">
       <input type="search" placeholder="Search"/>
       <img class="icon" id="search-btn" src="pictures/search.svg" alt="search"/>
-      <img class="icon" src="pictures/voice-search-icon.svg">
-      
+      <img class="icon" id="voice-search" src="pictures/voice-search-icon.svg" alt="voice search">
     </div>
 
     <div class="right-section">
       <img class="icon" src="pictures/upload.svg" alt="upload-icon">
-      <img class="icon" src="pictures/youtube-apps.svg">
-      <img class="icon" src="pictures/notifications.svg">
+      <img class="icon" src="pictures/youtube-apps.svg" alt="youtube apps">
+      <img class="icon" src="pictures/notifications.svg" alt="notifications">
       <img class="icon" id="profile-pic" src="pictures/profile.jpeg" alt="Profile picture">
     </div>
+  </div>
 
+  <div class="main-container">
+    
+    <aside class="sidebar">
+      <div class="sidebar-icon">
+        <img src="pictures/sidebar/home.svg" alt="Home icon">
+        <label>Home</label>
+      </div>
+
+      <div class="sidebar-icon">
+        <img src="pictures/sidebar/explore.svg" alt="Explore icon">
+        <label>Explore</label>
+      </div>
+
+      <p>Shorts</p>
+      <p>Subscriptions</p>
+      <p>Library</p>
+    </aside>
+
+    <main class="video-content">
+      <div class = "video-grid">
+        <div class="video-card">
+          <img class="thumbnail" src="pictures/thumbnails/thumbnail-1.webp" alt="Video 1">
+
+          <div class="bottom-video-card">
+            <div class="channel-pic-section">
+              <img class="channel-pic" src="pictures/profile.jpeg" alt="Channel picture">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+              </p>
+              <p class="video-author">
+                Marques Brownlee
+              </p>
+              <p class="video-stats">
+                3M views &middot; 6 months ago
+              </p>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="video-card">
+          <img class="thumbnail" src="pictures/thumbnails/thumbnail-2.webp" alt="Video 2">
+        </div>
+
+        <div class="video-card">
+          <img class="thumbnail" src="pictures/thumbnails/thumbnail-3.webp" alt="Video 3">
+        </div>
+
+        <div class="video-card">
+          <img class="thumbnail" src="pictures/thumbnails/thumbnail-4.webp" alt="Video 4">
+        </div>
+
+        <div class="video-card">
+          <img class="thumbnail" src="pictures/thumbnails/thumbnail-5.webp" alt="Video 5">
+        </div>
+
+        <div class="video-card">
+          <img class="thumbnail" src="pictures/thumbnails/thumbnail-6.webp" alt="Video 6">
+        </div>
+
+        <div class="video-card">
+          <img class="thumbnail" src="pictures/thumbnails/thumbnail-7.webp" alt="Video 7">
+        </div>
+
+        <div class="video-card">
+          <img class="thumbnail" src="pictures/thumbnails/thumbnail-8.webp" alt="Video 8">
+        </div>
+
+      </div>
+    </main>
 
   </div>
+
 </body>
 </html>
