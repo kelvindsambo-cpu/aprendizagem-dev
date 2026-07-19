@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-boxing;
+}
+
+.js-hobbies {
+  background-color: black;
+  color: white;
+  border-radius: 10%;
+  border:none;
+  padding: 5px 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.is-toggled{
+  background-color:rgb(220,220,220);
+  color: black; 
+}

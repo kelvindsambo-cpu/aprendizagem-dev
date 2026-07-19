@@ -1,4 +1,3 @@
-/* Apply box-sizing globally to prevent padding from breaking widths */
 * {
   box-sizing: border-box;
 }
