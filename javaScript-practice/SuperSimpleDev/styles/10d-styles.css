@@ -2,7 +2,7 @@
   box-sizing: border-boxing;
 }
 
-.js-hobbies {
+.js-gaming-btn, .js-tech-btn, .js-music-btn  {
   background-color: black;
   color: white;
   border-radius: 10%;

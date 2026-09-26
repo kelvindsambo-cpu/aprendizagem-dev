@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="styles/calculator.css"/>
+
+</head>
+<body>
+  <div class="main-frame">
+    <div class="result-area">
+      <input type="text" id="result-input" placeholder="Enter the numbers">
+    </div>
+    <div class="button-area">
+      <div class="digits-area">
+        <button id="digit-1" class="digit" onclick="writeDigit(this);">1</button>
+        <button id="digit-2" class="digit" onclick="writeDigit(this);">2</button>
+        <button id="digit-3" class="digit" onclick="writeDigit(this);">3</button>
+        <button id="digit-4" class="digit" onclick="writeDigit(this);">4</button>
+        <button id="digit-5" class="digit" onclick="writeDigit(this);">5</button>
+        <button id="digit-6" class="digit" onclick="writeDigit(this);">6</button>
+        <button id="digit-7" class="digit" onclick="writeDigit(this);">7</button>
+        <button id="digit-8" class="digit" onclick="writeDigit(this);">8</button>
+        <button id="digit-9" class="digit" onclick="writeDigit(this);">9</button>
+        <button id="paren-open" class="digit" onclick="writeDigit(this);">(</button>
+        <button id="digit-0" class="digit" onclick="writeDigit(this);">0</button>
+        <button id="paren-close" class="digit" onclick="writeDigit(this);">)</button>
+      </div>
+      <div class="operations">
+        <button id="op-add" class="operator" onclick="writeDigit(this);">+</button>
+        <button id="op-subtract" class="operator" onclick="writeDigit(this);">-</button>
+        <button id="op-multiply" class="operator" onclick="writeDigit(this);">*</button>
+        <button id="op-divide" class="operator" onclick="writeDigit(this);">/</button>
+        <button id="op-equals" class="operator" onclick="">=</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/calculator.js"></script>
+</body>
+</html>

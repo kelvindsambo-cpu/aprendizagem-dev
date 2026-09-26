@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  padding-top: 10px;
+}
+
+.main-frame {
+  background-color: rgb(240,240,240);
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black
+}
+
+.result-area{
+  height:20%;
+  width:100%;
+  border-bottom: 1px solid black;
+}
+
+input{
+  height: 100%;
+  width: 100%;
+  font-size: 35px;
+  padding: 10px 10px;
+}
+
+.button-area{
+  display: flex;
+  flex:1;
+  cursor: pointer;
+}
+
+.digits-area{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  flex: 4;
+}
+
+.digit {
+  display: flex;
+  background-color: rgb(204, 178, 82);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  font-size:25px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.digit:hover {
+   transform: scale(1.05);
+}
+
+.digit:focus-visible {
+  outline: 2px solid black;
+  outline-offset: -4px;
+}
+
+.operations {
+  display: grid;
+  flex: 1;
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.operator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  font-size:20px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.operator:hover{
+  transform: scale(1.05);
+}
+
+.operator:focus-visible {
+  outline: 2px solid black;
+  outline-offset: -4px;
+}
+
+
