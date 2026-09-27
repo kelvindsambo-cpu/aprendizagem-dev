@@ -15,7 +15,6 @@ okButton.addEventListener("click", () => {
     removeButton.textContent = "Remove";
     removeButton.className = "remove-btn";
     newRow.insertCell(3).appendChild(removeButton);
-
     inputActivity.value = "";
     inputDate.value = "";
 });
