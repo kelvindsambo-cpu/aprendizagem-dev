@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 48px 16px;
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    color: #1f2937;
+    background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+    background-attachment: fixed;
+}
+
+.card {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 32px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.subtitle {
+    margin: 4px 0 20px;
+    color: #6b7280;
+}
+
+.add-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.add-row input {
+    padding: 10px 12px;
+    font-size: 15px;
+    font-family: inherit;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+#activity-box {
+    flex: 1;
+    min-width: 0;
+}
+
+.add-row input:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25);
+}
+
+#ok-btn {
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background-color: #6366f1;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.15s, transform 0.1s;
+}
+
+#ok-btn:hover {
+    background-color: #4f46e5;
+}
+
+#ok-btn:active {
+    transform: scale(0.96);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 10px 12px;
+    font-size: 12px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #6b7280;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+td:first-child {
+    width: 60px;
+    font-weight: 600;
+    color: #6366f1;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+tbody tr {
+    transition: background-color 0.15s;
+}
+
+tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+.remove-btn {
+    padding: 6px 12px;
+    font-size: 13px;
+    font-family: inherit;
+    color: #dc2626;
+    background-color: transparent;
+    border: 1px solid #fecaca;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.remove-btn:hover {
+    color: white;
+    background-color: #dc2626;
+    border-color: #dc2626;
+}
+
+/* Phones: stack the inputs instead of squeezing them into one line */
+@media (max-width: 500px) {
+    .card {
+        padding: 20px;
+    }
+
+    .add-row {
+        flex-direction: column;
+    }
+}

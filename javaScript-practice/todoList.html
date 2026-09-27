@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="stylesheets/todo.css">
+</head>
+<body>
+    <main class="card">
+        <h1>To Do List</h1>
+        <p class="subtitle">
+            Add activity:
+        </p>
+
+        <div class="add-row">
+            <input id="activity-box" type="text" placeholder="What do you need to do?">
+            <input id="date-select" type="date">
+            <button id="ok-btn">
+                OK
+            </button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Number</th>
+                    <th>Activity</th>
+                    <th>Date</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody class="tbody">
+                <tr>
+                    <td>1</td>
+                    <td>Study for a test</td>
+                    <td>22 September 2026</td>
+                    <td><button class="remove-btn">Remove</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <script src="js/todo.js"></script>
+</body>
+</html>
